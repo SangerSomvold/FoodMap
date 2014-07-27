@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Silver"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/panelItem_height_main"
+        android:background="@drawable/bg_color_shape_t" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/usr_img_main"
+                android:layout_width="@dimen/panelItem_wide_main"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/main_button_margin"
+                android:background="@null"
+                android:padding="@dimen/main_button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/usr_img_main_bg" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_title" />
+
+            <ImageButton
+                android:id="@+id/search_img_main"
+                android:layout_width="@dimen/panelItem_wide_main"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/main_button_margin"
+                android:background="@null"
+                android:padding="@dimen/main_button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/search_img_main_bg" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchPanel_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/MintCream"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <AutoCompleteTextView
+                android:id="@+id/autoText_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/search_ok_main"
+                android:completionThreshold="1"
+                android:gravity="center"
+                android:hint="@string/hinit_main"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/search_ok_main"
+                android:layout_width="@dimen/panelItem_wide_main"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/search_main"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.foomap.view.KeywordsFlow
+        android:id="@+id/KeywordsFlow_main"
+        style="@style/item_ui"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/main_keywordview_bg_bitmap" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/panelItem_height_main"
+        android:background="@drawable/bg_color_shape"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/camera_img_main"
+            android:layout_width="@dimen/panelItem_wide_main"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:padding="@dimen/main_button_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/camera_img_main_bg" />
+    </RelativeLayout>
+
+</LinearLayout>

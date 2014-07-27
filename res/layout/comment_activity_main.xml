@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<HorizontalScrollView
+	    android:id="@+id/commentActivityHorizontalScrollView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="2"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp" >
+
+		<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+		    <GridView
+	        android:id="@+id/commentActivityGridView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:fastScrollEnabled="true"
+	        android:focusable="true"
+	        android:gravity="center"
+	        android:horizontalSpacing="0dp"
+	        android:scrollbars="none"
+	        android:scrollingCache="false"
+	        android:stretchMode="spacingWidthUniform"
+	        android:verticalSpacing="1dp" >
+	    	</GridView>
+	   	</LinearLayout>
+    </HorizontalScrollView>
+    
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_marginBottom="5dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_weight="0.5" >
+
+	     <ImageView
+	         android:layout_width="0dp"
+	         android:layout_height="fill_parent"
+	         android:layout_gravity="left"
+	         android:layout_weight="0.5"
+	         android:src="@drawable/create_poi_item_activity_location" >
+
+    	</ImageView>
+
+	     <View
+	         android:layout_width="1dp"
+	         android:layout_height="fill_parent"
+	         android:background="?android:attr/listDivider" />
+	     
+    	<TextView
+    	    android:id="@+id/commentActivity_location"
+    	    android:layout_width="0dp"
+    	    android:layout_height="fill_parent"
+    	    android:layout_weight="3"
+    	    android:textAppearance="?android:attr/textAppearanceMedium" >
+    	    
+    	</TextView>
+	</LinearLayout>
+
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.6" >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:gravity="center_vertical"
+	        android:text="名称："
+	        android:textAppearance="?android:attr/textAppearanceMedium" >
+	     
+	    </TextView>
+	    
+	    <TextView
+	        android:id="@+id/commentActivity_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="3"
+	        android:gravity="center_vertical"
+	        android:text="显示店名..."
+	        android:textAppearance="?android:attr/textAppearanceMedium" >
+	        
+	    </TextView>
+	</LinearLayout>
+	
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.6" >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:gravity="center_vertical"
+	        android:text="等级："
+	        android:textAppearance="?android:attr/textAppearanceMedium" >
+	        
+	    </TextView>
+	    
+	    <RatingBar
+	        android:id="@+id/commentActivity_rating"
+	        style="?android:attr/ratingBarStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:isIndicator="false"
+	        android:minHeight="20dip"
+	        android:numStars="5" >
+
+        </RatingBar>
+	</LinearLayout>
+	
+	 
+	
+	 <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+	 
+	 <LinearLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="0dp"
+	     android:layout_weight="0.6" >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:gravity="center_vertical"
+	        android:text="消费："
+	        android:textAppearance="?android:attr/textAppearanceMedium" >
+	    </TextView>
+	    
+	    <EditText
+	        android:id="@+id/commentActivity_cost"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="3" 
+	        android:hint="输入平均消费..."
+	        android:inputType="number">
+	    </EditText>
+	    
+	</LinearLayout>
+	
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+	
+	<EditText
+	    android:id="@+id/commentActivityEditText"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_marginBottom="5dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_weight="3"
+	    android:gravity="top"
+	    android:hint="输入评论...">
+	    
+	</EditText>
+    
+    
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:background="@color/DodgerBlue" >
+
+        <Button
+            android:id="@+id/commentActivityCreatButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:text="评论" >
+        </Button>
+
+        <Button
+            android:id="@+id/commentActivityCancelButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="取消" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

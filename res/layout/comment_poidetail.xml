@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Ivory"
+    android:orientation="vertical" >
+
+    <com.foomap.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/commentList_poiDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_margin="@dimen/layut_margin_small"
+        android:layout_weight="1"
+        android:divider="@color/Ivory"
+        android:dividerHeight="@dimen/dividerHeight" >
+    </com.foomap.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

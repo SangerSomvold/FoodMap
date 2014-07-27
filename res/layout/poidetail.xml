@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/poiPicMain_poiDetail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/poiPicMax_Height"
+        android:scaleType="fitCenter" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_poidetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pagertab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" />
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/bottomPanel_PoiDetail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomPanel_height"
+        android:background="@drawable/bg_color_shape"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/collection_bt_poiDetail"
+            style="@android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/collection" />
+
+        <Button
+            android:id="@+id/comment_bt_poiDetail"
+            style="@android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/comment" />
+    </LinearLayout>
+
+</LinearLayout>

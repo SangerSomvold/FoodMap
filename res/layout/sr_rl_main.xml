@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Ivory"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llSrCondition"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sr_main_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_keywordview_bg_bitmap"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ibSrBack"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/sr_main_condition_height"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingBottom="@dimen/sr_main_condition_padding"
+            android:paddingLeft="@dimen/sr_main_condition_padding"
+            android:paddingRight="@dimen/sr_main_condition_padding"
+            android:paddingTop="@dimen/sr_main_condition_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sr_back_bg" />
+
+        <ImageButton
+            android:id="@+id/ibSrClassify"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/sr_main_condition_height"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingBottom="@dimen/sr_main_condition_padding"
+            android:paddingLeft="@dimen/sr_main_condition_padding"
+            android:paddingRight="@dimen/sr_main_condition_padding"
+            android:paddingTop="@dimen/sr_main_condition_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sr_classify_bg"
+            tools:ignore="ButtonStyle" />
+
+        <ImageButton
+            android:id="@+id/ibSrRank"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/sr_main_condition_height"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingBottom="@dimen/sr_main_condition_padding"
+            android:paddingLeft="@dimen/sr_main_condition_padding"
+            android:paddingRight="@dimen/sr_main_condition_padding"
+            android:paddingTop="@dimen/sr_main_condition_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sr_rank_bg"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSrKeyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvSrMyPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llSrCondition"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:paddingBottom="@dimen/sr_main_myplace_padding_tp"
+        android:paddingLeft="@dimen/sr_main_myplace_padding_rl"
+        android:paddingRight="@dimen/sr_main_myplace_padding_rl"
+        android:paddingTop="@dimen/sr_main_myplace_padding_tp"
+        android:textSize="@dimen/sr_main_myplace_textsize" />
+
+    <ImageView
+        android:layout_width="@dimen/sr_main_myplace_textsize"
+        android:layout_height="@dimen/sr_main_myplace_textsize"
+        android:layout_alignBottom="@+id/tvSrMyPlace"
+        android:layout_marginBottom="@dimen/sr_main_myplace_padding_tp"
+        android:layout_marginTop="@dimen/sr_main_myplace_padding_tp"
+        android:layout_toLeftOf="@+id/tvSrMyPlace"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mv_location" />
+
+    <ProgressBar
+        android:id="@+id/pbSrRefresh"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSrMyPlace"
+        android:background="@color/white" />
+
+    <com.foomap.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lvSrList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/pbSrRefresh"
+        android:background="@null" >
+    </com.foomap.pulltorefresh.library.PullToRefreshListView>
+
+    <ImageButton
+        android:id="@+id/ibSrMap"
+        android:layout_width="@dimen/sr_main_title_image_size"
+        android:layout_height="@dimen/sr_main_title_image_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/sr_main_title_image_magin"
+        android:layout_marginRight="@dimen/sr_main_title_image_magin"
+        android:background="@null"
+        android:contentDescription="@string/str_sr_account"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sr_map_bg" />
+
+</RelativeLayout>

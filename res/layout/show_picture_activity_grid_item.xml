@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="110dp" >
+
+        <ImageView
+            android:id="@+id/showPictureActivityGridItem_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/show_picture_bg" />
+     
+        <ImageView
+            android:id="@+id/showPictureActivityGridItem_select"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/show_picture_activity_unchoised"
+            android:focusable="false" />
+
+    </RelativeLayout>

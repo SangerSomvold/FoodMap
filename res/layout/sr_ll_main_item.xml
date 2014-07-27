@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llSrMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sr_item_color"
+    android:paddingBottom="@dimen/sr_mainitem_padding"
+    android:paddingTop="@dimen/sr_mainitem_padding" >
+
+    <ImageView
+        android:id="@+id/ivSrMainItemImage"
+        android:layout_width="@dimen/sr_mainitem_image_size"
+        android:layout_height="@dimen/sr_mainitem_image_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/sr_mainitem_image_margin"
+        android:layout_marginRight="@dimen/sr_mainitem_image_margin"
+        android:contentDescription="@+String/shopImage"
+        android:scaleType="centerCrop" />
+
+    <ProgressBar
+        android:id="@+id/pbSrMainItemImage"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/sr_mainitem_image_size"
+        android:layout_height="@dimen/sr_mainitem_image_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/sr_mainitem_image_margin"
+        android:layout_marginRight="@dimen/sr_mainitem_image_margin"
+        android:background="@null" />
+
+    <TextView
+        android:id="@+id/tvSrMainItemTitle"
+        android:layout_width="@dimen/sr_mainitem_account_width"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivSrMainItemImage"
+        android:layout_toRightOf="@+id/ivSrMainItemImage"
+        android:singleLine="true"
+        android:textSize="@dimen/sr_mainitem_account_textsize" />
+
+    <RatingBar
+        android:id="@+id/rbSrMainItemScore"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSrMainItemTitle"
+        android:layout_toRightOf="@+id/ivSrMainItemImage"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3" />
+
+    <TextView
+        android:id="@+id/tvSrMainItemDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/sr_mainitem_margin_right"
+        android:layout_toLeftOf="@+id/tvSrMainItemTitle"
+        android:textColor="@color/DarkGray"
+        android:textSize="@dimen/sr_mainitem_distance_textsize"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvSrMainItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvSrMainItemTitle"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/sr_mainitem_margin_right"
+        android:layout_marginTop="@dimen/sr_mainitem_price_margin_top"
+        android:textColor="@color/Red"
+        android:textSize="@dimen/sr_mainitem_price_textsize" />
+
+    <TextView
+        android:id="@+id/tvSrMainItemFeature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvSrMainItemLocation"
+        android:layout_below="@+id/rbSrMainItemScore"
+        android:layout_toLeftOf="@+id/tvSrMainItemPrice"
+        android:layout_toRightOf="@+id/ivSrMainItemImage"
+        android:maxLines="2"
+        android:textSize="@dimen/sr_mainitem_feature_textsize" />
+
+    <TextView
+        android:id="@+id/tvSrMainItemLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivSrMainItemImage"
+        android:layout_marginRight="@dimen/sr_mainitem_margin_right"
+        android:layout_toRightOf="@+id/ivSrMainItemImage"
+        android:singleLine="true"
+        android:textColor="@color/DarkGray"
+        android:textSize="@dimen/sr_mainitem_location_textsize" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_login">
+    <!-- padding 内边距   layout_margin 外边距
+  		android:layout_alignParentTop 布局的位置是否处于顶部 -->
+  		
+  	<RelativeLayout 
+  	    android:id="@+id/register_div"
+  	    android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:padding="15dip"        
+	  	android:layout_margin="15dip" 
+	  	android:background="@drawable/background_login_div" >
+  		<!-- 账号 -->
+	  	<TextView 
+	  		android:id="@+id/register_user_input"
+	  		android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+	  		android:layout_alignParentTop="true"
+	  		android:layout_marginTop="5dp"
+	  		android:text="@string/login_label_username"
+	  		style="@style/normalText"/>
+	  	<EditText 
+	  		android:id="@+id/register_username_edit"
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="wrap_content"
+	  		android:hint="@string/login_username_hint"
+	  		android:layout_below="@id/register_user_input"
+	  		android:singleLine="true"
+	  		android:inputType="text"/>
+	  	
+
+	  	
+	    <!-- 密码 text -->
+	    <TextView 
+	    	android:id="@+id/register_password_input"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/register_username_edit"
+	    	android:layout_marginTop="3dp"
+	    	android:text="@string/login_label_password"
+	    	style="@style/normalText"/>
+	    <EditText 
+	    	android:id="@+id/register_password_edit"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/register_password_input"
+	    	android:inputType="textPassword"
+	    	android:singleLine="true"
+	    	 />
+	    
+	    <!-- 确认密码 -->
+	    <TextView 
+	    	android:id="@+id/register_check_input"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/register_password_edit"
+	    	android:layout_marginTop="3dp"
+	    	android:text="@string/login_label_checkpassword"
+	    	style="@style/normalText"/>
+	    <EditText 
+	    	android:id="@+id/register_check_edit"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/register_check_input"
+	    	android:inputType="textPassword"
+	    	android:singleLine="true"
+	    	 />
+	    
+	    <!-- 登录button -->
+	    <Button 
+	    	android:id="@+id/register_button"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/register_check_edit"
+	    	android:layout_alignRight="@id/register_check_edit"
+	    	android:text="@string/register_label"
+	    	android:textSize="20.0sp"
+	    	android:textColor ="#ffffffff" 
+	    	android:background="@drawable/blue_button" />
+  	</RelativeLayout>
+  	
+  	 	<RelativeLayout 
+      	android:layout_width="fill_parent"
+      	android:layout_height="wrap_content" >
+		
+		  <Button android:id ="@+id/register_login_button" 
+				android:layout_width ="wrap_content" 
+				android:layout_height ="wrap_content" 
+				android:layout_alignParentRight ="true" 
+				android:background ="@drawable/background_login_div" 
+				android:clickable ="true" 
+				android:gravity ="left|center" 
+				android:paddingLeft ="8.0dip" 
+				android:paddingRight ="12.0dip" 
+				android:text = "@string/register_login" 
+				android:textColor ="#ffffffff" 
+				android:textSize ="12.0sp" /> 
+		 
+		
+  	</RelativeLayout>
+  
+  
+</LinearLayout>

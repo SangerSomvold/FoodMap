@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/card_ui"
+    android:orientation="vertical" >
+    
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commentInfoForUser_height"
+        android:orientation="horizontal" >
+        <TextView 
+            android:id="@+id/usr_name_poiDetail"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_small"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:maxEms="6"
+            android:gravity="left" 
+            />
+  
+          <TextView 
+            android:id="@+id/comment_date_poiDetail"
+            android:layout_marginLeft="@dimen/layut_margin_small"
+              android:textSize="@dimen/text_size_small"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+            android:singleLine="true"
+            android:maxEms="6"
+            android:gravity="right" 
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layut_padding_small"
+            android:id="@+id/usr_comment_poiDetail"/>
+        <LinearLayout 
+            android:id="@+id/comment_picsContainer_piodetail"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+       </LinearLayout>
+       <!-- 评分 消费 -->
+       
+           <LinearLayout 
+           
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView 
+              
+                android:id="@+id/userCost_poiDetail"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/poiDesItem_Wide"
+                android:textColor="@color/Red"
+                android:gravity="center_vertical"/>
+            <RatingBar 
+                android:id="@+id/userGrade_poiDetail"
+                  android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_gravity="right"
+                android:numStars="5"
+                />
+       </LinearLayout>
+      
+    </LinearLayout>
+
+    
+        
+</LinearLayout>

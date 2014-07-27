@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llSrClassify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PopWindowBg"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <ListView
+        android:id="@+id/lvSrClassifyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/sr_pw_bottom"
+        android:layout_marginLeft="@dimen/sr_pw_classify_margin"
+        android:layout_marginRight="@dimen/sr_pw_classify_margin"
+        android:layout_marginTop="@dimen/sr_pw_top"
+        android:background="@color/white"
+        android:divider="@null" >
+    </ListView>
+
+</LinearLayout>
